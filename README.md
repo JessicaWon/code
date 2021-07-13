@@ -67,6 +67,12 @@
 
 ```
 
+## 二叉树的实现
+```
+可以使用class来定义biTree，biTree中可以有两个.left和.right初始化为None
+然后在遍历的时候就可以判断是不是None，来判断是否分支走到了尽头
+```
+
 ## 一些shell工具使用python实现
 ### tail -n 命令实现
 ```
