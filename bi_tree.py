@@ -48,8 +48,9 @@ while search_bi_tree != None or bi_tree_stack != None:
 '''
 reserved = {}
 
-## left -> root -> right
+## left->root->right 
 ## when pops then print
+## create a dict !!!
 
 while search_bi_tree != None or bi_tree_stack != []:
     time.sleep(1)
