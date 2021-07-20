@@ -29,6 +29,9 @@
 定义head_index tail_index，max_length
 然后先做一个临时的temp_array，如果未重复，就将这个串append到列表中，如果重复了，那么就从最开始的重复字串处给锯断，在这个过程中判断temp_array是否超过了max_length，如果超过，记录head_index和tail_index，结束后返回
 需要注意的是array.index(item)拿到的是第一个字串的结果，而不是最后一个，所以要自己设置一个index，每次循环自增1
+
+另外注意切片的时候需要temp_string = temp_string[index+1:] 记得加1！！！
+另外记得max_length需要变化
 ```
 ## 合并
 #### 两个数组合并
