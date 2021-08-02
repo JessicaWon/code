@@ -74,6 +74,10 @@
 
 那，什么时候停止递归呢？就是当head == tail的时候, 也就是传递进去的头尾是一样的时候就停止了
 
+
+特别注意：两层while循环，一定记得，不然只有一层
+          另外需要注意head_index _head_index _tail_index tail_index的大小关系
+
 ```
 ### 归并排序
 
