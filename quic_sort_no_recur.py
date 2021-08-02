@@ -42,24 +42,20 @@ def quic_sort_no_recur(array):
             tail_index = index[1]
             head_index = index[0]
             _tail_index = tail_index
-            _head_index = tail_index
+            _head_index = head_index
             _base_item = array[tail_index]
             
             print '----',_base_item, 'base', head_index, _head_index, _tail_index, tail_index
             while _head_index < _tail_index:
                 while _head_index < _tail_index:
                     if array[_head_index] > _base_item:
-                        print 'changing...', array
                         array[_tail_index] = array[_head_index]
-                        print 'changed...', array
                         break
                     else:
                         _head_index = _head_index + 1
                 while _head_index < tail_index and _tail_index >=0:
                     if array[_tail_index] < _base_item:
-                        print 'changing...', array
                         array[_head_index] = array[_tail_index]
-                        print 'changed...', array
                         break
                     else:
                         _tail_index = _tail_index - 1
@@ -74,4 +70,4 @@ def quic_sort_no_recur(array):
             print stack, array
     print array
 
-quic_sort_no_recur([2,4,17,6,9,21,7,16,3,18,1,19,0,5,10])
+quic_sort_no_recur([2,4,17,6,9,21,7,16,3,18,1,19,0,5,12,10])
